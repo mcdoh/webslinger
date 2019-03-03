@@ -14,7 +14,7 @@ defmodule Gunslinger.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :cowboy, :plug],
+      extra_applications: [:logger, :plug_cowboy, :plug],
       mod: {Gunslinger.Application, []}
     ]
   end
@@ -22,8 +22,7 @@ defmodule Gunslinger.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:cowboy, "~> 2.6"},
-      {:plug, "~> 1.7"}
+      {:plug_cowboy, "~> 2.0"}
     ]
   end
 end
