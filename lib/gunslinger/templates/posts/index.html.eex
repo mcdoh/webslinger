@@ -3,6 +3,13 @@
   <head>
   </head>
   <body>
+    <h1>Posts</h1>
+    <%= if @current_user_email do %>
+      Welcome <%= @current_user_email %>
+    <% else %>
+      <a href="/login">Log in</a>
+    <% end %>
+
     <form action="/posts" method="post">
       <div>
         <label for="author">Author:</label>
