@@ -7,7 +7,9 @@ defmodule Gunslinger.Router do
 
   plug Plug.Logger
   plug :match
+  plug Plug.Parsers, parsers: [:urlencoded, :multipart]
   plug :dispatch
 
   get "/", to: Gunslinger.Actions.Posts.Index
+  post "/posts", to: Gunslinger.Actions.Posts.Create
 end

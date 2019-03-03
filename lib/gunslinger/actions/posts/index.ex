@@ -5,7 +5,9 @@ defmodule Gunslinger.Actions.Posts.Index do
   def init(opts), do: opts
 
   def call(conn, _opts) do
+    posts = Gunslinger.Repo.all()
+
     conn
-    |> send_resp(200, Posts.index(adjective1: "fastest", adjective2: "coolest"))
+    |> send_resp(200, Posts.index(posts: posts))
   end
 end
