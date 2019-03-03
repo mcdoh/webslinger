@@ -1,5 +1,5 @@
 defmodule Gunslinger.Views.Posts do
-  require EEx
+  use Gunslinger.View
 
-  EEx.function_from_file(:def, :index, "lib/gunslinger/templates/posts/index.html.eex", [:assigns])
+  deftemplate("posts/index.html.eex", :index)
 end
