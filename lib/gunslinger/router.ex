@@ -9,7 +9,5 @@ defmodule Gunslinger.Router do
   plug :match
   plug :dispatch
 
-  get "/" do
-    send_resp(conn, 200, "Routing!")
-  end
+  get "/", to: Gunslinger.Actions.Posts.Index
 end
