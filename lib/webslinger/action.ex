@@ -1,5 +1,5 @@
 defmodule Webslinger.Action do
-  defmacro __using__(opts) do
+  defmacro __using__(_opts) do
     quote do
       import Plug.Conn
       import Webslinger.Action.Helpers
