@@ -6,6 +6,7 @@ defmodule Gunslinger.Router do
   end
 
   plug Plug.Logger
+  plug Plug.Static, from: :gunslinger, at: "/", only: ["css", "images", "favicon.ico"]
   plug :match
   plug Plug.Parsers, parsers: [:urlencoded, :multipart]
   plug :put_secret_key_base
