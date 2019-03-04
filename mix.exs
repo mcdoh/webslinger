@@ -1,9 +1,9 @@
-defmodule Gunslinger.MixProject do
+defmodule Webslinger.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :gunslinger,
+      app: :webslinger,
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule Gunslinger.MixProject do
   def application do
     [
       extra_applications: [:logger, :plug_cowboy, :plug],
-      mod: {Gunslinger.Application, []}
+      mod: {Webslinger.Application, []}
     ]
   end
 

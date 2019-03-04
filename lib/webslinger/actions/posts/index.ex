@@ -1,9 +1,9 @@
-defmodule Gunslinger.Actions.Posts.Index do
-  use Gunslinger.Action
-  alias Gunslinger.Views.Posts
+defmodule Webslinger.Actions.Posts.Index do
+  use Webslinger.Action
+  alias Webslinger.Views.Posts
 
   def call(conn, _opts) do
-    posts = Gunslinger.Repo.all()
+    posts = Webslinger.Repo.all()
 
     current_user_email = get_session(conn, :current_user_email)
 

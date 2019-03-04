@@ -1,11 +1,11 @@
-defmodule Gunslinger.View do
+defmodule Webslinger.View do
   defmacro __using__(_) do
     quote do
-      import Gunslinger.View
+      import Webslinger.View
     end
   end
 
-  @root_path "lib/gunslinger/templates"
+  @root_path "lib/webslinger/templates"
 
   defmacro deftemplate(template_name, function_name) do
     template_path = Path.join(@root_path, template_name)

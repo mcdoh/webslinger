@@ -1,8 +1,8 @@
-defmodule Gunslinger.Action do
+defmodule Webslinger.Action do
   defmacro __using__(opts) do
     quote do
       import Plug.Conn
-      import Gunslinger.Action.Helpers
+      import Webslinger.Action.Helpers
 
       def init(opts), do: opts
     end

@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :gunslinger, key: :value
+#     config :webslinger, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:gunslinger, :key)
+#     Application.get_env(:webslinger, :key)
 #
 # You can also configure a third-party app:
 #

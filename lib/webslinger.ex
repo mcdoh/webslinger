@@ -1,6 +1,6 @@
-defmodule Gunslinger do
+defmodule Webslinger do
   @moduledoc """
-  Documentation for Gunslinger.
+  Documentation for Webslinger.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Gunslinger do
 
   ## Examples
 
-      iex> Gunslinger.hello()
+      iex> Webslinger.hello()
       :world
 
   """

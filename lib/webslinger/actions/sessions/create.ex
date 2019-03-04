@@ -1,5 +1,5 @@
-defmodule Gunslinger.Actions.Sessions.Create do
-  use Gunslinger.Action
+defmodule Webslinger.Actions.Sessions.Create do
+  use Webslinger.Action
 
   def call(conn, _opts) do
     %{"email" => email} = conn.params

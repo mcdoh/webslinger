@@ -1,4 +1,4 @@
-defmodule Gunslinger.Repo do
+defmodule Webslinger.Repo do
   use Agent
 
   def start_link(_) do
